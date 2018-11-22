@@ -1,0 +1,20 @@
+{
+    "name": "jiemo/mobile",
+    "description": "解析手机号码归属地",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Cong Peijun",
+            "email": "me@congpeijun.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Jiemo\\Mobile\\": "./src"
+        }
+    },
+    "require": {
+        "php": "^5.6|^7.0"
+    }
+}
