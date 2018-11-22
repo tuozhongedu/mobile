@@ -1,0 +1,15 @@
+#!/usr/bin/env php
+<?php
+
+require __DIR__ . '/../src/Parser.php';
+
+$number = $argv[1];
+$memStart = memory_get_usage();
+$timeStart = microtime(true);
+$result = (new \Jiemo\Mobile\Parser())->parse($number);
+$timeEnd = microtime(true);
+$memEnd = memory_get_usage();
+print_r($result);
+echo 'time: ' . ($timeEnd - $timeStart);
+echo PHP_EOL;
+echo 'memory:' . ($memEnd - $memStart);

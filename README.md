@@ -12,7 +12,12 @@ composer require jiemo/mobile
 ```php
 $mobile = new \Jiemo\Mobile\Parser();
 // 解析
-$mobile->parse(18624394876);
+$mobile->parse(13333333333);
 // 数据库版本
 $mobile->getDbVersion();
+```
+
+
+```bash
+php bin/parsemobile 13333333333
 ```

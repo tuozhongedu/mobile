@@ -108,7 +108,7 @@ class Parser
                     $current = fread($fp, 1);
                     $data .= $current;
                 }
-                $data = explode('|', $data);
+                $data = explode('|', trim($data));
                 return [
                     'province' => $data[0],
                     'city' => $data[1],
@@ -116,7 +116,6 @@ class Parser
                     'area_code' => $data[3],
                     'isp' => self::ISP_TYPE[$cardType],
                 ];
-                return $data;
             }
         }
         return false;
