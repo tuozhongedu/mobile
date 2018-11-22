@@ -15,9 +15,20 @@ $mobile = new \Jiemo\Mobile\Parser();
 $mobile->parse(13333333333);
 // 数据库版本
 $mobile->getDbVersion();
+
 ```
 
+* 命令行工具
 
 ```bash
 php bin/parsemobile 13333333333
 ```
+
+    Array
+    (
+        [province] => 辽宁
+        [city] => 大连
+        [zip_code] => 116000
+        [area_code] => 0411
+        [isp] => 联通
+    )
