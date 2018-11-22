@@ -15,15 +15,14 @@ $mobile = new \Jiemo\Mobile\Parser();
 $mobile->parse(18624394876);
 // 数据库版本
 $mobile->getDbVersion();
-/**
-Array
-(
-    [province] => 辽宁
-    [city] => 大连
-    [zip_code] => 116000
-    [area_code] => 0411
-    [isp] => 联通
-)
-*/
 
 ```
+
+    Array
+    (
+        [province] => 辽宁
+        [city] => 大连
+        [zip_code] => 116000
+        [area_code] => 0411
+        [isp] => 联通
+    )
