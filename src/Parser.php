@@ -90,7 +90,7 @@ class Parser
         $start = 0;
         $end = ($this->fileSize - $indexStart) / 9;
 
-        while ($start <= $end) {
+        while ($start < $end) {
             $mid = floor(($end - $start) / 2) + $start;
             fseek($fp, $indexStart + $mid * 9);
             $indexPrefix = $this->uInt32(fread($fp, 4));
